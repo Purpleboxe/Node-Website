@@ -1,0 +1,91 @@
+:root {
+  --black: #0d1b2a;
+}
+
+body {
+  background-color: whitesmoke;
+  color: var(--black);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: solid black 1px;
+}
+
+header h1 {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.link {
+  color: var(--black);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  min-height: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  outline: solid 1px black;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 10px;
+}
+
+form button {
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid black;
+  background: transparent;
+  font-weight: bold;
+
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: white;
+}
